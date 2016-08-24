@@ -18,7 +18,7 @@ INCLUDES= 	-I/usr/local/include \
 			-I$(BUILD_TOP)/include
 
 #Sources
-SOURCE_DIR=./
+SOURCE_DIR=src
 SOURCES= \
 		Logger.cpp \
 		test_core.cpp
