@@ -49,12 +49,12 @@ private:
 
 };
 
-#define logDebug(format, ...)    okcore::Logger::log(okcore::Logger::DEBUG   , "%s|D|"format, __MODULE__, ##__VA_ARGS__)
-#define logInfo(format, ...)     okcore::Logger::log(okcore::Logger::INFO    , "%s|I|"format, __MODULE__, ##__VA_ARGS__)
-#define logWarn(format, ...)     okcore::Logger::log(okcore::Logger::WARN    , "%s|W|"format, __MODULE__, ##__VA_ARGS__)
-#define logError(format, ...)    okcore::Logger::log(okcore::Logger::ERROR   , "%s|E|"format, __MODULE__, ##__VA_ARGS__)
-#define logUrgent(format, ...)   okcore::Logger::log(okcore::Logger::URGENT  , "%s|U|"format, __MODULE__, ##__VA_ARGS__)
-#define logCritical(format, ...) okcore::Logger::log(okcore::Logger::CRITICAL, "%s|C|"format, __MODULE__, ##__VA_ARGS__)
+#define logDebug(format, ...)    okcore::Logger::log(okcore::Logger::DEBUG   , "%s|D|" format, __MODULE__, ##__VA_ARGS__)
+#define logInfo(format, ...)     okcore::Logger::log(okcore::Logger::INFO    , "%s|I|" format, __MODULE__, ##__VA_ARGS__)
+#define logWarn(format, ...)     okcore::Logger::log(okcore::Logger::WARN    , "%s|W|" format, __MODULE__, ##__VA_ARGS__)
+#define logError(format, ...)    okcore::Logger::log(okcore::Logger::ERROR   , "%s|E|" format, __MODULE__, ##__VA_ARGS__)
+#define logUrgent(format, ...)   okcore::Logger::log(okcore::Logger::URGENT  , "%s|U|" format, __MODULE__, ##__VA_ARGS__)
+#define logCritical(format, ...) okcore::Logger::log(okcore::Logger::CRITICAL, "%s|C|" format, __MODULE__, ##__VA_ARGS__)
 
 #ifdef DEBUG_MODULE
 #define DPRINTF(format, ...) logDebug(format, ##__VA_ARGS__)

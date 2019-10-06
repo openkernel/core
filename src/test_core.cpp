@@ -12,17 +12,17 @@ using namespace okcore;
 int main(int ac, const char *av[])
 {
     Logger::init();
-    logError("ERROR");
-    logInfo("INFO");
-    logDebug("DEBUG");
+    logError("This is some ERROR");
+    logInfo("This is some INFO");
+    logDebug("This is some DEBUG");
     Logger::setLevel(Logger::INFO);
-    logError("ERROR");
-    logInfo("INFO");
-    logDebug("DEBUG");
+    logError("This is some ERROR");
+    logInfo("This is some INFO");
+    logDebug("This is some DEBUG");
     Logger::setLevel(Logger::DEBUG);
-    logError("ERROR");
-    logInfo("INFO");
-    logDebug("DEBUG");
+    logError("This is some ERROR");
+    logInfo("This is some INFO");
+    logDebug("This is some DEBUG");
 
 }
 
